@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --enring-green: #2a3d32;
+    --enring-green-deep: #1e2e26;
+    --enring-silver: #c8cdd2;
+    --enring-dark: #0a0c0f;
+    --enring-navy: #0f1419;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-enring-dark text-enring-silver antialiased;
+  }
+
+  ::selection {
+    @apply bg-enring-green-muted text-enring-silver-bright;
+  }
+}
+
+@layer components {
+  .silver-gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      180deg,
+      #f0f2f4 0%,
+      #c8cdd2 35%,
+      #9aa3ab 70%,
+      #7a858d 100%
+    );
+  }
+
+  .section-label {
+    @apply font-sans text-[10px] uppercase tracking-luxury text-enring-silver/50;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-light tracking-wide text-enring-silver-bright md:text-4xl lg:text-5xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center border border-enring-silver/40 bg-transparent px-8 py-3 font-sans text-xs uppercase tracking-luxury text-enring-silver-bright transition-all duration-300 hover:border-enring-silver-bright hover:bg-enring-green/30;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center border border-enring-silver/20 px-6 py-2.5 font-sans text-xs uppercase tracking-luxury text-enring-silver/80 transition-all duration-300 hover:border-enring-silver/50 hover:text-enring-silver-bright;
+  }
+
+  .image-placeholder {
+    @apply relative flex min-h-[120px] items-center justify-center overflow-hidden bg-enring-green-deep/80;
+  }
+
+  .image-placeholder-label {
+    @apply font-sans text-[10px] uppercase tracking-widest text-enring-silver/30;
+  }
+}
