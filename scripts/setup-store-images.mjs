@@ -30,7 +30,6 @@ const assignments = [
   { dest: "workshop-04.png", src: join(shop, "IMG_8742.PNG") },
   { dest: "gallery-01.png", src: join(nested, "IMG_8721.PNG") },
   { dest: "gallery-02.png", src: join(nested, "IMG_8626.PNG") },
-  { dest: "gallery-03.png", src: join(shop, "IMG_8740.PNG") },
   { dest: "gallery-04.png", src: join(nested, "IMG_8628.PNG") },
   { dest: "gallery-05.png", src: join(nested, "IMG_8629.PNG") },
   { dest: "gallery-06.png", src: join(nested, "IMG_8627.PNG") },

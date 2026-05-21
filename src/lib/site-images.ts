@@ -26,7 +26,6 @@ export const siteImages = {
     experienceGallery: [
       "/images/gallery-01.png",
       "/images/gallery-02.png",
-      "/images/gallery-03.png",
       "/images/gallery-04.png",
       "/images/gallery-05.png",
       "/images/gallery-06.png",

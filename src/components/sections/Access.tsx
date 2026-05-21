@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GoogleMapEmbed } from "@/components/GoogleMapEmbed";
 import { hours } from "@/lib/hours";
 
 export function Access() {
@@ -66,17 +67,7 @@ export function Access() {
             </Link>
           </div>
 
-          {/* Map embed placeholder — replace with Google Maps iframe or static map image */}
-          <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-enring-silver/10">
-            {/* TODO: Replace iframe src with precise Google Maps embed for Power House Roppongi */}
-            <iframe
-              title="EnRing Roppongi location map"
-              src="https://www.google.com/maps?q=35.6627,139.7310&z=16&output=embed"
-              className="h-full w-full min-h-[280px] opacity-60 grayscale"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <GoogleMapEmbed className="aspect-video w-full" minHeight="280px" />
         </div>
       </div>
     </section>

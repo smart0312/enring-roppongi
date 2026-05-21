@@ -32,13 +32,12 @@ const highlights = [
 const experienceGallery = [
   { src: siteImages.workshop.experienceGallery[0], alt: "Guests proudly showing their handmade rings" },
   { src: siteImages.workshop.experienceGallery[1], alt: "Couple crafting rings at the workshop bench" },
-  { src: siteImages.workshop.experienceGallery[2], alt: "Smiling guests during the ring-making session" },
-  { src: siteImages.workshop.experienceGallery[3], alt: "Family celebrating with their finished rings" },
-  { src: siteImages.workshop.experienceGallery[4], alt: "International guests with traditional fan backdrop" },
-  { src: siteImages.workshop.experienceGallery[5], alt: "Hands together displaying unique coin rings" },
-  { src: siteImages.workshop.experienceGallery[6], alt: "Handcrafted silver coin ring with floral detail" },
-  { src: siteImages.workshop.experienceGallery[7], alt: "Coin pendant necklace from the Share Your Heart experience" },
-  { src: siteImages.workshop.experienceGallery[8], alt: "Matching handcrafted gold rings worn by guests" },
+  { src: siteImages.workshop.experienceGallery[2], alt: "Family celebrating with their finished rings" },
+  { src: siteImages.workshop.experienceGallery[3], alt: "International guests with traditional fan backdrop" },
+  { src: siteImages.workshop.experienceGallery[4], alt: "Hands together displaying unique coin rings" },
+  { src: siteImages.workshop.experienceGallery[5], alt: "Handcrafted silver coin ring with floral detail" },
+  { src: siteImages.workshop.experienceGallery[6], alt: "Coin pendant necklace from the Share Your Heart experience" },
+  { src: siteImages.workshop.experienceGallery[7], alt: "Matching handcrafted gold rings worn by guests" },
 ] as const;
 
 export default function ExperiencePage() {

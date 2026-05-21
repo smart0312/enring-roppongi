@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookingSection } from "@/components/BookingSection";
+import { GoogleMapEmbed } from "@/components/GoogleMapEmbed";
 import { StoreImage } from "@/components/StoreImage";
 import { hours } from "@/lib/hours";
 import { siteImages } from "@/lib/site-images";
@@ -102,14 +103,7 @@ export default function VisitPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-video overflow-hidden border border-enring-silver/10">
-              <iframe
-                title="Map to EnRing Roppongi"
-                src="https://www.google.com/maps?q=35.6627,139.7310&z=16&output=embed"
-                className="h-full w-full min-h-[220px] opacity-60 grayscale"
-                loading="lazy"
-              />
-            </div>
+            <GoogleMapEmbed minHeight="220px" />
           </div>
         </div>
 
